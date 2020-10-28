@@ -46,8 +46,16 @@ OptionInt evaluate(string& line) {
             } else if (s == "*") {
                 st.push(b * a);
             } else if (s == "/") {
+                if (a == 0) {
+                    cerr << "zero division" << endl;
+                    return OptionInt{ false, 0 };
+                }
                 st.push(b / a);
             } else if (s == "%") {
+                if (a == 0) {
+                    cerr << "zero division" << endl;
+                    return OptionInt{ false, 0 };
+                }
                 st.push(b % a);
             }
         } else if (isDigit(s)) {
