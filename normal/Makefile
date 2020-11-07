@@ -12,6 +12,10 @@ $(directory):
 $(directory)/%.o: src/%.c
 	$(compiler) -Wall -O2 -c -o $@ $<
 
+.PHONY: run
+run: $(target)
+	$(target)
+
 .PHONY: clean
 clean:
 	rm -r $(directory)

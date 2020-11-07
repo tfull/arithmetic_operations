@@ -16,19 +16,18 @@ OCaml: ocaml 4.02.1
 
 assuming bash
 
-## Compilation
-
-```
-bash compile.sh
-```
-or
-```
-make
+```shell
+# compile
+$ make
+# run
+$ make run
+# cleanup
+$ make clean
 ```
 
 ## Execution Sample
 
-```
+```shell
 shell$ bash execute.sh
 > (3 + 2) * 11 - 2 * 7
 41
@@ -36,20 +35,10 @@ shell$ bash execute.sh
 91
 ```
 
-## Cleanup
-
-```
-bash clean.sh
-```
-or
-```
-make clean
-```
-
 ## Create an Equation Automatically
 
-```
-ocaml tree.ml $(depth)
+```shell
+$ ocaml tree.ml $(depth)
 ```
 where $(depth) is maximum depth of syntax tree.
 
@@ -71,19 +60,18 @@ OCaml: ocaml 4.02.1
 
 以下のコマンドは bash を使う想定で記述されている。
 
-## コンパイル方法
-
-```
-bash compile.sh
-```
-または
-```
-make
+```shell
+# コンパイル
+$ make
+# 実行
+$ make run
+# 削除
+$ make clean
 ```
 
 ## 実行例
 
-```
+```shell
 shell$ bash execute.sh
 > (3 + 2) * 11 - 2 * 7
 41
@@ -91,19 +79,9 @@ shell$ bash execute.sh
 91
 ```
 
-## クリーンアップ
-
-```
-bash clean.sh
-```
-または
-```
-make clean
-```
-
 ## 式の自動生成
 
-```
-ocaml tree.ml $(depth)
+```shell
+$ ocaml tree.ml $(depth)
 ```
 ただし $(depth) は構文木の深さの最大値である。
