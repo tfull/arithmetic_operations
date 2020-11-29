@@ -1,0 +1,4 @@
+/normal/bin/
+*.hi
+*.o
+a.out
